@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 
 
-def detect_ranges(L):
-    L_sorted = sorted(L)
+def detect_ranges(nums: list):
+    sorted_nums = sorted(nums)
     result = []
-    i = 0
-    while i < len(L_sorted):
-        group_start = L_sorted[i]
-        grou_end = None
-        while i < len(L_sorted) - 1 and L_sorted[i] + 1 == L_sorted[i + 1]:
-            grou_end = L_sorted[i + 1]
-            i += 1
-        if grou_end:
-            result.append((group_start, grou_end + 1))
+    idx = 0
+    while idx < len(sorted_nums):
+        group_start = sorted_nums[idx]
+        group_end = None
+        while idx < len(sorted_nums) - 1 and sorted_nums[idx] + 1 == sorted_nums[idx + 1]:
+            group_end = sorted_nums[idx + 1]
+            idx += 1
+        if group_end:
+            result.append((group_start, group_end + 1))
         else:
             result.append(group_start)
-        i += 1
+        idx += 1
     return result
 
 
