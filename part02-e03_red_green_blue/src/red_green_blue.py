@@ -4,13 +4,10 @@ import re
 
 
 def red_green_blue(filename="src/rgb.txt"):
-    clead_lines = []
+    pattern = r"(\d+)\s+(\d+)\s+(\d+)\s+(.+)"
     with open(filename) as f:
-        f.readline()
-        for line in f:
-            groups = re.search(r"(\d+)\s+(\d+)\s+(\d+)\s+(.+)", line).groups()
-            clead_lines.append("\t".join(groups))
-    return clead_lines
+        lines = f.readlines()[1:]
+    return ["\t".join(re.search(pattern, line).groups()) for line in lines]
 
 
 def main():
