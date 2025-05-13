@@ -4,15 +4,11 @@ import sys
 
 
 def file_count(filename):
-    linecount = 0
-    wordcount = 0
-    charactercount = 0
     with open(filename) as f:
-        for line in f:
-            linecount += 1
-            wordcount += len(line.split())
-            charactercount += len(line)
-    return (linecount, wordcount, charactercount)
+        content = f.read()
+    lines = content.splitlines()
+    words = content.split()
+    return (len(lines), len(words), len(content))
 
 
 def main():
