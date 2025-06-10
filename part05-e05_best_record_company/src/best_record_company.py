@@ -2,12 +2,16 @@
 
 import pandas as pd
 
+
 def best_record_company():
-    return None
+    df = pd.read_csv("src/UK-top40-1964-1-2.tsv", sep="\t")
+    publisher = df.groupby("Publisher")["WoC"].sum().idxmax()
+    return df[df["Publisher"] == publisher]
+
 
 def main():
-    return
-    
+    print(best_record_company())
+
 
 if __name__ == "__main__":
     main()
