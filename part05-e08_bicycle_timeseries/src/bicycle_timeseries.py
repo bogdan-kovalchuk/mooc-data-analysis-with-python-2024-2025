@@ -38,7 +38,6 @@ def split_date(df):
 
     date_parts = date_parts.astype({"Day": int, "Month": int, "Year": int, "Hour": int})
 
-    # df = df.drop("Päivämäärä", axis=1)
     return pd.concat([date_parts, df], axis=1)
 
 
