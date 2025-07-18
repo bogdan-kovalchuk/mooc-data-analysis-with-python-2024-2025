@@ -315,3 +315,35 @@ checksum = "dbc690823a00472655946f0e58d98593"
 [exercises.part05-e13_cycling_weather_continues]
 id = 245532
 checksum = "081bafe49456fa8374003c4b402875fa"
+
+[exercises.part06-e01_blob_classification]
+id = 245559
+checksum = "a40b7bd8faf8d85fb04037c30cee888b"
+
+[exercises.part06-e02_plant_classification]
+id = 245558
+checksum = "d7ed4bb3f1f100c88c606cd3b281457e"
+
+[exercises.part06-e03_word_classification]
+id = 245562
+checksum = "6902cfc7a72443f79acdfef3d5a93089"
+
+[exercises.part06-e04_spam_detection]
+id = 245557
+checksum = "2f118bebcdac7db2d344589585c021bd"
+
+[exercises.part06-e05_plant_clustering]
+id = 245555
+checksum = "1093312123c1761e4fef85ffd08422d4"
+
+[exercises.part06-e06_nonconvex_clusters]
+id = 245556
+checksum = "24749dd41611654e2ad5ccd1303bfe76"
+
+[exercises.part06-e07_binding_sites]
+id = 245561
+checksum = "4a2b40e0ffb95f0019d1f3e5b8cc5daf"
+
+[exercises.part06-e08_explained_variance]
+id = 245560
+checksum = "791843db94039148af5915df12b5b035"
