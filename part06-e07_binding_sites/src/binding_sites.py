@@ -16,15 +16,6 @@ import scipy.spatial as sp
 import scipy.cluster.hierarchy as hc
 
 
-def find_permutation(n_clusters, real_labels, labels):
-    permutation = []
-    for i in range(n_clusters):
-        idx = labels == i
-        new_label = scipy.stats.mode(real_labels[idx])[0]
-        permutation.append(new_label)
-    return permutation
-
-
 def toint(x):
     return {"A": 0, "C": 1, "G": 2, "T": 3}[x]
 
