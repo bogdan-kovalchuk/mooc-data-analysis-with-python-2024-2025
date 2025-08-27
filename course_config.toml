@@ -348,6 +348,10 @@ checksum = "4a2b40e0ffb95f0019d1f3e5b8cc5daf"
 id = 245560
 checksum = "791843db94039148af5915df12b5b035"
 
+[exercises.part07-e01_sequence_analysis]
+id = 245580
+checksum = "6dc20fb2d9bafc437388c3f760f502a3"
+
 [exercises.part08-e01_regression]
 id = 245521
 checksum = "0bcec44778faa92b8a0bef8c5af26f09"
